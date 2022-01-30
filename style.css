@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    padding: 10px;
+    background-image: url(./images/pattern-background-desktop.jpg);
+    
+}
+h1{
+    text-align: center;
+    padding: 2px;
+    font-family: 'Outfit', sans-serif;
+
+}
+.container{
+    width: 320px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+}
+.container > p{
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    margin: 10px;
+}
+.container > img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 10px;
+}
+.pay{
+    border: 2px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    background-color: hsl(245, 75%, 52%);
+    width: 295px;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 8px 12px hsl(224, 23%, 55%);
+}
+button:hover{
+    cursor: pointer;
+}
+button:hover > .pay{
+    background-color: hsl(224, 23%, 55%);
+}
+.cancel{
+    border: 0;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 295px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(225, 100%, 98%);
+}
+.plan{
+    text-align: center;
+    width: 300px;
+    border: 1px;
+    margin: 5px;
+    padding: 8px;
+    background-color: hsl(225, 100%, 94%);
+    
+}
+.plan > img{
+    display: flex;
+    width: 15%;
+    position: fixed;
+    border-radius: 30px;
+}
+.change{
+    text-align: center;
+    float: right;
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+}
+.plan > p{
+    font-family: 'Outfit', sans-serif;
+    position: absolute;
+    padding-left: 75px;
+}
+@media screen and (max-width: 375px){
+.attribution{
+    position: absolute;
+    width: 275px;
+    right: -20%;
+    bottom: 3%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    }
+    }
