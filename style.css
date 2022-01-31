@@ -99,7 +99,7 @@ button:hover{
 .plan > p{
     font-family: 'Outfit', sans-serif;
     position: absolute;
-    padding-left: 95px;
+    padding-left: 90px;
 }
 @media screen and (max-width: 375px){
 .attribution{
