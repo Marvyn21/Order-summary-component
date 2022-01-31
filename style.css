@@ -7,18 +7,20 @@
 body{
     width: 1440px;
     padding: 10px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(./images/pattern-background-desktop.jpg);
     
 }
 h1{
     text-align: center;
-    padding: 2px;
     font-family: 'Outfit', sans-serif;
 
 }
 .container{
-    width: 320px;
-    height: 500px;
+    width: 375px;
+    height: 520px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -27,10 +29,13 @@ h1{
     justify-content: center;
     background-color: hsl(225, 100%, 98%);
 }
-.container > p{
+.containertwo{
+    padding: 10px;
+    margin: 10px;
+}
+.containertwo > p{
     text-align: center;
     font-size: 16px;
-    font-style: normal;
     font-family: 'Outfit', sans-serif;
     margin: 10px;
 }
@@ -43,38 +48,41 @@ h1{
     margin-bottom: 10px;
 }
 .pay{
-    border: 2px;
+    border: 1px;
     border-radius: 10px;
     margin: 10px;
     padding: 15px;
     background-color: hsl(245, 75%, 52%);
-    width: 295px;
+    width: 100%;
     font-family: 'Outfit', sans-serif;
-    box-shadow: 0 8px 12px hsl(224, 23%, 55%);
+    box-shadow: 0 5px 10px hsl(224, 23%, 55%);
 }
 button:hover{
     cursor: pointer;
 }
-button:hover > .pay{
+.pay:hover{
     background-color: hsl(224, 23%, 55%);
+    color: white;
 }
 .cancel{
     border: 0;
     border-radius: 10px;
-    margin: 10px;
+    /* margin: 5px; */
     padding: 10px;
-    width: 295px;
+    width: 100%;
     font-family: 'Outfit', sans-serif;
     background-color: hsl(225, 100%, 98%);
 }
+.cancel:hover{
+    color: black;
+}
 .plan{
     text-align: center;
-    width: 300px;
+    width: 100%;
     border: 1px;
-    margin: 5px;
-    padding: 8px;
+    padding: 10px;
     background-color: hsl(225, 100%, 94%);
-    
+    border-radius: 15px;
 }
 .plan > img{
     display: flex;
@@ -91,7 +99,7 @@ button:hover > .pay{
 .plan > p{
     font-family: 'Outfit', sans-serif;
     position: absolute;
-    padding-left: 75px;
+    padding-left: 95px;
 }
 @media screen and (max-width: 375px){
 .attribution{
